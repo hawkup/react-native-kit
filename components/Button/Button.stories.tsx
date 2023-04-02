@@ -1,10 +1,10 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react-native";
-import { MyButton } from "./Button";
+import { Button } from "./Button";
 
-const MyButtonMeta: ComponentMeta<typeof MyButton> = {
+const Meta: ComponentMeta<typeof Button> = {
   title: "MyButton",
-  component: MyButton,
+  component: Button,
   argTypes: {
     onPress: { action: "pressed the button" },
   },
@@ -13,8 +13,14 @@ const MyButtonMeta: ComponentMeta<typeof MyButton> = {
   },
 };
 
-export default MyButtonMeta;
+export default Meta;
 
-type MyButtonStory = ComponentStory<typeof MyButton>;
+type Story = ComponentStory<typeof Button>;
 
-export const Basic: MyButtonStory = (args) => <MyButton {...args} />;
+export const Basic: Story = (args) => <Button {...args} />;
+
+export const Icon: Story = (args) => <Button {...args} />;
+
+export const Ghost: Story = (args) => <Button {...args} />;
+
+export const Block: Story = (args) => <Button {...args} />;

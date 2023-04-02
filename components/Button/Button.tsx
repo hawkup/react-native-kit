@@ -1,23 +1,11 @@
 import React from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
-interface MyButtonProps {
+import { Button as ButtonUI } from "react-native-ui-lib";
+
+interface ButtonProps {
   onPress: () => void;
   text: string;
 }
 
-export const MyButton = ({ onPress, text }: MyButtonProps) => {
-  return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Text style={styles.text}>{text}</Text>
-    </TouchableOpacity>
-  );
+export const Button = ({ onPress, text }: ButtonProps) => {
+  return <ButtonUI text70 white background-orange30 onPress={onPress} label={text}/>
 };
-
-const styles = StyleSheet.create({
-  container: {
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    backgroundColor: "violet",
-  },
-  text: { color: "black" },
-});
