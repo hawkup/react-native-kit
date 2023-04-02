@@ -4,6 +4,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "license": "MIT",
   "scripts": {
+    "format": "rome format . --write",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -55,6 +56,7 @@
     "babel-plugin-react-docgen-typescript": "^1.5.1",
     "babel-plugin-react-native-web": "^0.18.10",
     "react-native-svg-transformer": "^1.0.0",
+    "rome": "12.0.0",
     "typescript": "^4.9.4"
   },
   "private": true

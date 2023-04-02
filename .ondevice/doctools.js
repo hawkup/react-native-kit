@@ -4,7 +4,7 @@ import { enhanceArgTypes } from "@storybook/docs-tools";
 
 addArgTypesEnhancer(enhanceArgTypes);
 addParameters({
-  docs: {
-    extractArgTypes,
-  },
+	docs: {
+		extractArgTypes,
+	},
 });
